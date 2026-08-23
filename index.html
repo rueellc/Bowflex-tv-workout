@@ -85,7 +85,7 @@ const workouts={
 };
 
 // Workout week starts Saturday:
-const day=(new Date().getDay()+2)%7, w=workouts[day], key="bowflexAdvanced_"+day;
+const day=(new Date().getDay()+3)%7, w=workouts[day], key="bowflexAdvanced_"+day;
 let done=JSON.parse(localStorage.getItem(key)||"[]"), current=-1;
 let modeSec=0, modeInt=null, restSec=90, restInt=null;
 
